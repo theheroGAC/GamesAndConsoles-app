@@ -1,5 +1,5 @@
 TITLE_ID = GAC000001
-TARGET   = GAMESANDC
+TARGET   = GAMESANDCONSOLES
 OBJS     = main.o
 
 PSVITAIP = 192.168.0.105
@@ -18,11 +18,11 @@ all: $(TARGET).vpk
 %.vpk: eboot.bin
 	vita-mksfoex -s TITLE_ID=$(TITLE_ID) "$(TARGET)" param.sfo
 	vita-pack-vpk -s param.sfo -b eboot.bin \
-      -a resource/icon0.png=sce_sys/icon0.png \
-      -a resource/template.xml=sce_sys/livearea/contents/template.xml \
-      -a resource/startup.png=sce_sys/livearea/contents/startup.png \
-      -a resource/bg0.png=sce_sys/livearea/contents/bg0.png \
-      $@
+		--add sce_sys/icon0.png=sce_sys/icon0.png \
+		--add sce_sys/livearea/contents/bg.png=sce_sys/livearea/contents/bg.png \
+		--add sce_sys/livearea/contents/startup.png=sce_sys/livearea/contents/startup.png \
+		--add sce_sys/livearea/contents/template.xml=sce_sys/livearea/contents/template.xml \
+		$@
 	  
 eboot.bin: $(TARGET).velf
 	vita-make-fself $< $@
