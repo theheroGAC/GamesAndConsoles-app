@@ -9,6 +9,13 @@
 		<startup-image>startup.png</startup-image>
 	</gate>
 	
+	<frame id="frame1">
+		<liveitem>
+			<target>https://www.gamesandconsoles/forums</target>
+			<background x="20" y="-10" >forums_button.png</background>
+		</liveitem>
+	</frame>
+	
 	<frame id="frame2">
 		<liveitem>
 			<text valign="bottom" align="left" text-align="left" text-valign="bottom" line-space="3" ellipsis="on">
@@ -28,7 +35,7 @@
 	<frame id="frame4">
 		<liveitem>
 			<text align="left" text-align="left" word-wrap="off" ellipsis="on">
-				<str size="18" color="#ffffff" shadow="on">v1.00</str>
+				<str size="18" color="#ffffff" shadow="on">v1.01</str>
 			</text>
 		</liveitem>
 	</frame>
