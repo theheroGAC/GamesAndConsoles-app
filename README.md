@@ -1,5 +1,5 @@
 # GamesAndConsoles app
 Simple application to access the gamesandconsoles.org site
-uses the uricaller tool by freakler
+uses App created with LUA and based on sources by Team OneLua. https://github.com/ONElua/
 
-Thanks to: Team Molecule, xerpi, The_FloW ,gdljjrod and freakler
+Thanks to: Team Onelua
