@@ -1,5 +1,5 @@
 TITLE_ID = GAC000001
-TARGET   = GAMESANDCONSOLES
+TARGET   = Gamesandconsoles
 OBJS     = main.o
 
 PSVITAIP = 192.168.0.105
